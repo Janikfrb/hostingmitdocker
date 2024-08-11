@@ -57,7 +57,7 @@ WORKDIR /home/container
 STOPSIGNAL SIGINT
 
 # Copy entrypoint script and set execute permissions
-COPY --chown=container:container ./debian/entrypoint.sh /entrypoint.sh
+COPY --chown=container:container ./entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 # Set entrypoint and default command
